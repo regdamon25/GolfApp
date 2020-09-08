@@ -1,0 +1,158 @@
+@import '~@angular/material/theming';
+
+
+@include mat-core();
+
+/* For use in src/lib/core/theming/_palette.scss */
+$md-golfappblue: (
+    50 : #e1e5eb,
+    100 : #b3bfcd,
+    200 : #8194ac,
+    300 : #4e698b,
+    400 : #284872,
+    500 : #022859,
+    600 : #022451,
+    700 : #011e48,
+    800 : #01183e,
+    900 : #010f2e,
+    A100 : #6784ff,
+    A200 : #345bff,
+    A400 : #0132ff,
+    A700 : #002de6,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$md-golfapplightgreen: (
+    50 : #e5f7f1,
+    100 : #beecdb,
+    200 : #93dfc3,
+    300 : #67d2ab,
+    400 : #47c999,
+    500 : #26bf87,
+    600 : #22b97f,
+    700 : #1cb174,
+    800 : #17a96a,
+    900 : #0d9b57,
+    A100 : #caffe3,
+    A200 : #97ffc9,
+    A400 : #64ffae,
+    A700 : #4bffa1,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$md-golfappmidgreen: (
+    50 : #e4f4ee,
+    100 : #bce4d6,
+    200 : #90d3ba,
+    300 : #64c19e,
+    400 : #42b38a,
+    500 : #21a675,
+    600 : #1d9e6d,
+    700 : #189562,
+    800 : #148b58,
+    900 : #0b7b45,
+    A100 : #acffd3,
+    A200 : #79ffb8,
+    A400 : #46ff9d,
+    A700 : #2cff90,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$md-golfapplightergreen: (
+    50 : #e6faf3,
+    100 : #c1f4e1,
+    200 : #98eccd,
+    300 : #6ee4b9,
+    400 : #4fdfaa,
+    500 : #30d99b,
+    600 : #2bd593,
+    700 : #24cf89,
+    800 : #1eca7f,
+    900 : #13c06d,
+    A100 : #f1fff8,
+    A200 : #beffdd,
+    A400 : #8bffc3,
+    A700 : #71ffb6,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+
+$my-golf-app-primary: mat-palette($md-golfappblue);
+$my-golf-app-accent:  mat-palette($md-golfapplightergreen);
+
+$my-golf-app-warn: mat-palette($mat-red);
+
+$my-golf-app-theme: mat-light-theme((
+    color: (
+        primary: $my-golf-app-primary,
+        accent: $my-golf-app-accent,
+        warn: $my-golf-app-warn
+    )
+));
+
+@include angular-material-theme($my-golf-app-theme)
+
